@@ -1,0 +1,240 @@
+:root{
+    --purple: #2f192e;
+    --purple-light: #30192d;
+    --dark-blue: #012677;
+    --blue: #5c65c0;
+    --skyblue: #00b4fc;
+    --light-blue: #005bc5;
+    --dark-pink: #f64c57;
+    --dark-magent: #e21b5a;
+    --light-green:#61e2c2;
+    --light-purple: #d9abff;
+    --red: rgb(241, 28, 28) ;
+    --green: rgb(23, 231, 23);
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: poppins,sans-serif;
+}
+body{
+    background: linear-gradient(45deg, var(--purple),var(--purple-light));
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    min-height: 100%;
+    flex-wrap: wrap;
+    position: relative;
+}
+.profile-card{
+    background: #111;
+    width: 400px;
+    padding: 3rem;
+    border-radius: 10px;
+    min-height: 400px;
+    position: relative;
+    color: #fff;
+    margin: 15px;
+    display: flex;
+    justify-content: space-between ;
+    flex-direction: column;
+    align-items: center;
+}
+.profile-card .profile-pic{
+    margin-top: 15px;
+    overflow: hidden;
+}
+.profile-card .profile-pic img{
+    border-radius: 10px;
+}
+.profile-card .profile-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+.profile-details .intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-card .intro h2{
+    margin-top: 20px;
+    }
+    .profile-card .intro h4{
+        background: #1d1d1d;
+        font-weight: 400;
+        border-radius: 4px;
+        padding: 5px 10px;
+        margin: 8px;
+        }
+
+        .profile-details .intro .social{
+            margin-top: 10px;
+            margin-bottom: 25px;
+        }
+        .profile-details .intro .social i {
+            color: #1d1d1d;
+            font-size: 16px;
+            background-color: #222;
+            margin: 5px;
+            height: 35px;
+            width: 35px;
+            text-align: center;
+            line-height: 35px;
+            border-radius: 5px;
+            transition: 0.5s;
+        }
+        .profile-details .intro .social i:hover{
+            transform: scale(1.2);
+            border: 1px solid rgb(255,255 ,255,0.3);
+        }
+        .profile-details .contact-info{
+            background-color: #1d1d1d;
+            padding: 15px;
+            border-radius: 10px;
+            width: 100%;
+        }
+        .profile-details .contact-info .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgb(255,255 ,255,0.2);
+            padding: 10px 0;
+            margin-bottom: 10px;
+
+        }
+        .contact-info .row .icon{
+            height: 40px;
+            width: 40px;
+            line-height: 40px;
+            border-radius: 5px;
+            background-color: #111;
+            text-align: center;
+            color: #fff;
+            transition: 0.5s;
+        }
+        .row .icon:hover{
+            transform: scale(1.2);
+            border: 1px solid rgb(255,255 ,255,0.1);
+        }
+        .row-content{
+            min-width: 70%;
+        }
+        .row .content span{
+            font-size: 13px;
+        }
+        .span, .h5{
+            position: relative;
+            right: 100px;
+        }
+        .spanhi,.hi{
+            position: relative;
+            right: 90px;
+        }
+        .Download-btn{
+            background: linear-gradient(45deg, #f64c57,#e21b5a);
+            color:#fff ;
+            border-radius: 30px;
+            padding: 1rem 3rem;
+            margin-top: 1.5rem;
+            border: none;
+        }
+        .about{
+            background-color: #111;
+            max-width: 800px;
+            padding: 2rem 3rem;
+            border-radius: 10px;
+
+        }
+        .about h1{
+            color: #f2f2f2;
+            margin-bottom: 1.1rem;
+            position: relative;
+            display: inline-block;
+            font-size: 3.5rem;
+        }
+        .about h1::after{
+            position: absolute;
+            content: "";
+            top: 50%;
+            right: -50%;
+            width: 45%;
+            height: 3px;
+            background: linear-gradient(45deg, #f64c57, #e21b5a);
+        }
+        .about p{
+            color: #555;
+            margin: 1.5rem 0;
+        }
+        
+        
+        .skill-chart {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .skill {
+            margin: 15px 0;
+        }
+        .skill-name {
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: white;
+            font-size: 27px;
+        }
+        .skill-bar {
+            height: 25px;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .skill-bar-fill {
+            height: 100%;
+            text-align: right;
+            line-height: 25px;
+            color: white;
+            padding-right: 10px;
+            border-radius: 5px;
+        }
+        /* Xoogga xirfadaha midabyo kala duwan */
+        .html { width: 90%; background-color: #f16529; }
+        .css { width: 80%; background-color: #2965f1; }
+        .javascript { width: 70%; background-color: #f7df1e; color: rgb(245, 242, 242); }
+    
+img{
+    width: 200px;
+    height: 100%;
+}
+.about h2{
+    color: white;
+}
+.work{
+    display: flex;
+    flex-direction: column;
+}
+.workbox{
+    box-sizing: border-box;
+    border: 2px solid #555;
+    box-shadow: rgba(10, 10, 10, 0.1);
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 10px 20px;
+}
+.workbox i{
+    color: #fa41bc;
+    font-size: 40px;
+}
+ .icon h6 {
+    font-size: 19px;
+    font-family: poppins,sans-serif;
+    padding-top: 20px;
+    color: wheat;
+}
